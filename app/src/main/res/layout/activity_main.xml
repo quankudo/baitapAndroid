@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingVertical="15dp"
+    android:orientation="vertical"
+    android:id="@+id/layout_main"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn màu nền"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+    <RadioGroup
+        android:id="@+id/groupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/btnLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nền sáng"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/btnDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nền tối"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="Nguyễn Hữu Quân - 22115053122332"/>
+
+</LinearLayout>
